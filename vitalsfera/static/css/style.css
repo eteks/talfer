@@ -90,10 +90,10 @@ ol, ul
 .inner_nav .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border:0;
 }
-/*.inner_nav ul  > li > a
+.inner_nav ul  > li > a
 {
 	color: #55565a !important;
-}*/
+}
 .social_icon i {
     color: #1e9bd7 !important;
     background-color: #fff;
@@ -400,6 +400,105 @@ text-align: justify;
 {
 	padding-top:0 !important;
 }
+/* ---------------------------------------------------
+    Dashboard
+----------------------------------------------------- */
+
+    
+    /* Set gray background color and 100% height */
+    .page_bgcolor
+    {
+    	
+	 	background-color: #d9dcd7;
+  		padding-bottom: 5%;
+  		padding-top:5%;
+    }
+    .sidenav 
+    {
+      height: 100%;
+      padding-left: 0;
+      padding-right:0;
+    }
+    .logo_dashboard
+    {
+      padding: 30px 0;
+      background-color: #fff;
+      padding-right: 21.6%;
+    }
+    .sidenav_first
+    {
+      background-color: #4e4f53;
+    }
+    .sidenav .sidenav_first > li
+    {
+      /*box-shadow: 1px 1px #000;*/
+     }
+  	.sidenav .sidenav_first .active > a
+    {
+      background-color: #1e9bd7;
+  	}
+     .sidenav .sidenav_first > li a
+     {
+     	color: #fff;
+     	border-radius:0;
+     	text-align: right;
+
+     }
+      .sidenav .sidenav_first > li a:hover
+     {
+     	color: #fff;
+     	background-color: #1e9bd7;
+     	border-radius:0;
+     }
+     .sidenav_second ul.nav_bar_right >li a
+     {
+     	color: #fff
+     	background-color:#bab9ba !imp;
+     }
+       .sidenav .sidenav_second > li a
+     {
+     	color: #fff;
+     	background-color: #bab9ba;
+     }
+     .sidenav .sidenav_second > li a:hover
+     {
+     	 background-color: #1e9bd7;
+     	 text-decoration: none;
+     }
+     .sidenav_second
+     {
+     	background-color: #fff;
+		padding-right: 4%;
+		padding-left: 61.5%;
+		padding-bottom: 4%;
+		padding-top: 4%;
+     }
+     .sidenav_bottom img
+     {
+     	min-width: 100%;
+		padding: 15px 0;
+		max-width: 100%;
+     }
+     .dash_board_slider
+     {
+     	border: 12px solid #fff;
+     }
+
+     /* Set black background color, white text and some padding */
+    .footer_dashboard {
+      background-color: #fff;
+      color: #656669;
+     
+    }
+    .footer_bottom
+    {
+    	padding-left: 0;
+        padding-right:0;
+    }
+    .home_slide .carousel-caption h4 
+    {
+     font-size: 18px !important;
+    }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -415,10 +514,7 @@ text-align: justify;
 	{
 		border-right: 0;
 	}
-	.home_slide .carousel-control .glyphicon-chevron-left
-	{
-	 left: 282px !important;
-	}
+	
 	.home_block_one_inner_one,.home_block_three_inner_one,.home_block_four_inner_one,.home_block_five_inner_one,.home_block_six_inner_one
 	{
 		width:100%;

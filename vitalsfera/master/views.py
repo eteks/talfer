@@ -9,3 +9,5 @@ class Home_pageview(TemplateView):
     template_name = "home.html"
 class Login_pageview(TemplateView):
     template_name = "login.html"
+class Dashboard_pageview(TemplateView):
+    template_name = "dashboard.html"
