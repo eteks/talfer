@@ -405,44 +405,44 @@ text-align: justify;
 ----------------------------------------------------- */
 
     
-    /* Set gray background color and 100% height */
-    .page_bgcolor
-    {
-    	
-	 	background-color: #d9dcd7;
-  		padding-bottom: 5%;
-  		padding-top:5%;
-    }
-    .sidenav 
-    {
-      height: 100%;
-      padding-left: 0;
-      padding-right:0;
-    }
-    .logo_dashboard
-    {
-      padding: 30px 0;
-      background-color: #fff;
-      padding-right: 21.6%;
-    }
-    .sidenav_first
-    {
-      background-color: #4e4f53;
-    }
-    .sidenav .sidenav_first > li
-    {
-      /*box-shadow: 1px 1px #000;*/
-     }
-  	.sidenav .sidenav_first .active > a
-    {
-      background-color: #1e9bd7;
-  	}
-     .sidenav .sidenav_first > li a
-     {
-     	color: #fff;
-     	border-radius:0;
-     	text-align: right;
-
+/* Set gray background color and 100% height */
+.page_bgcolor
+{
+	
+ 	background-color: #d9dcd7;
+		padding-bottom: 5%;
+		padding-top:5%;
+}
+.sidenav 
+{
+  height: 100%;
+  padding-left: 0;
+  padding-right:0;
+}
+.logo_dashboard
+{
+  padding: 30px 0;
+  background-color: #fff;
+  padding-right: 21.6%;
+}
+.sidenav_first
+{
+  background-color: #4e4f53;
+}
+.sidenav .sidenav_first > li
+{
+  /*box-shadow: 1px 1px #000;*/
+ }
+	.sidenav .sidenav_first .active > a
+{
+  background-color: #1e9bd7;
+	}
+ .sidenav .sidenav_first > li a
+ {
+ 	color: #fff;
+ 	border-radius:0;
+ 	text-align: right;
+ 	
      }
       .sidenav .sidenav_first > li a:hover
      {
@@ -484,24 +484,28 @@ text-align: justify;
      	border: 25px solid #fff;
      }
 
-     /* Set black background color, white text and some padding */
-    .footer_dashboard {
-      background-color: #fff;
-      color: #656669;
-     
-    }
-    .footer_bottom
-    {
-    	padding-left: 0;
-        padding-right:0;
-    }
-    .home_slide .carousel-caption h4 
-    {
-     font-size: 18px !important;
-    }
+ /* Set black background color, white text and some padding */
+.footer_dashboard {
+  background-color: #fff;
+  color: #656669;
+ 
+}
+.footer_bottom
+{
+	padding-left: 0;
+    padding-right:0;
+}
+.home_slide .carousel-caption h4 
+{
+ font-size: 18px !important;
+}
+.menu_hr
+{
+	border: 1px solid #1e9bd7;
+}
 
 /* ---------------------------------------------------
-    MEDIAQUERIES
+MEDIAQUERIES
 ----------------------------------------------------- */
 
 @media (max-width: 992px) 
@@ -598,3 +602,11 @@ text-align: justify;
 		margin-left:0;
 	}
 }
+@media screen and (max-width: 767px) 
+{
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+     
+    }
