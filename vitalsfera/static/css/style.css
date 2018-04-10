@@ -1,4 +1,24 @@
-
+/*FONTS*/
+@font-face 
+{
+    font-family: titilliumweb_regular;
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+@font-face 
+{
+    font-family: titilliumweb_bold;
+    src: url(../fonts/TitilliumWeb-Bold.ttf);
+}
+@font-face 
+{
+    font-family: titilliumweb_semibold;
+    src: url(../fonts/TitilliumWeb-SemiBold.ttf);
+}
+@font-face 
+{
+    font-family: titilliumweb_light;
+    src: url(../fonts/TitilliumWeb-Light.ttf);
+}
 /* ---------------------------------------------------
    Header
 ----------------------------------------------------- */
@@ -22,6 +42,7 @@
 	color: #fff;
 	text-decoration: none;
 	padding: 0 8px;
+	font-family: titilliumweb_regular;
 }
 
 .top_nav ul > li > .nav_border
@@ -107,6 +128,7 @@ ol, ul
 .inner_nav ul.navbar-nav  > li > a
 {
 	color: #1e9bd7 !important;
+	font-family: titilliumweb_regular;
 }
 
 /* ---------------------------------------------------
@@ -178,6 +200,7 @@ footer img
 .home_slide .carousel-caption p
 {
 	font-size: 38px !important;
+	font-family: titilliumweb_bold;
 }
 .home_block_one_inner_one,.home_block_three_inner_one,.home_block_four_inner_one,.home_block_five_inner_one,.home_block_six_inner_one
 {
@@ -195,11 +218,14 @@ footer img
 {
 	color:#1e9bd7;
 	font-size:36px;
+	font-family: titilliumweb_semibold;
 }
 .home_block_one_inner_two p, .home_block_three_inner_one p, .home_block_five_inner_one p, .objective_P p
 {
 	color: #656669;
 	font-size:18px;
+	font-family: titilliumweb_light;
+	text-align: justify;
 }
 .last_child
 {
@@ -215,6 +241,7 @@ footer img
     padding: 3px 30px;
     text-align: center;
     margin: auto;
+    font-family: titilliumweb_regular;
 }
 .home_block_two
 {
@@ -223,11 +250,6 @@ footer img
 .modules
 {
 	padding: 55px;
-}
-.modules p
-{
-	font-size: 36px;
-	color: #fff;	
 }
 .modules > div
 {
@@ -261,12 +283,14 @@ footer img
 	font-size: 24px;
 	color: #fff;
 	text-align: center;
+	font-family: titilliumweb_regular;
 }
 .module_inner p
 {
 	font-size: 16.2px;
 	color: #fff;
 	text-align: left;
+	font-family: titilliumweb_regular;
 }
 .module_mas_info {
     border: 1px solid #fff;
@@ -301,15 +325,18 @@ footer img
 {
 	background-color: #32a48e;
 }
-.home_block_four_inner_two h2, .home_block_six_inner_two h2
+.home_block_four_inner_two h2, .home_block_six_inner_two h2 , .modules h2
 {
 	color:#fff;
 	font-size:36px;
+	font-family: titilliumweb_semibold;
 }
 .home_block_four_inner_two p, .home_block_six_inner_two p
 {
  font-size:18px;
  color:#1b3344;
+ font-family: titilliumweb_light;
+text-align: justify;
 }
 .home_block_four_inner_two .mas_info, .home_block_six_inner_two .mas_info
 {
@@ -325,9 +352,11 @@ footer img
  text-align: center;
  padding: 20px;
 }
-.home_block_seven label
+.home_block_seven label, input
 {
-
+	font-family: titilliumweb_regular;
+	font-size: 18px;
+	font-weight: normal;
 }
 .enviar_button
 {
@@ -339,22 +368,29 @@ footer img
   border: 0;
   margin-bottom: 30px;
   float: right;
+  font-family: titilliumweb_semibold;
 }
 .home_block_seven input
 {
 	border:1px solid #1e9bd7;
 	border-radius:0;
 }
+.home_block_seven textarea
+{
+	border:1px solid #1e9bd7 !important;
+	border-radius:0 !important;
+}
 
 /* ---------------------------------------------------
     Home
 ----------------------------------------------------- */
-.block_topic
+.block_topic h2
 {
 	font-size: 48px;
 	color: #1e9bd7;
 	text-align: center;
 	padding-top: 5px;
+	font-family: titilliumweb_semibold;
 }
 .first_layer
 {
