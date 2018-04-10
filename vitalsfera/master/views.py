@@ -7,3 +7,5 @@ class Index_pageview(TemplateView):
     template_name = "index.html"
 class Home_pageview(TemplateView):
     template_name = "home.html"
+class Dashboard_pageview(TemplateView):
+    template_name = "dashboard.html"
