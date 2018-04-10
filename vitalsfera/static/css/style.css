@@ -479,9 +479,9 @@ text-align: justify;
 		padding: 15px 0;
 		max-width: 100%;
      }
-     .dash_board_slider
+     .dash_board_slider, .login_slider
      {
-     	border: 12px solid #fff;
+     	border: 25px solid #fff;
      }
 
      /* Set black background color, white text and some padding */
