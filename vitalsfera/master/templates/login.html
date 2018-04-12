@@ -31,42 +31,87 @@
 
     
 
-  </head>
- <body>
- 	<div class="page_bgcolor">
-<div class="inner_nav">
-			<nav class="navbar navbar-default">
-		        <div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>                        
-					</button>
-		        	<a class="navbar-brand" href="{% url 'index' %}"><img src="../static/img/img/logo.png"></a>
+</head>
+	<body>
+		<div class="page_bgcolor">
+		  <div class="container">
+		    <div class="row content">
+		    	<div class="col-sm-12">  
+					<div class="inner_nav">
+						<nav class="navbar navbar-default">
+				        	<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>                        
+								</button>
+				        		<a class="navbar-brand" href="{% url 'index' %}"><img src="../static/img/img/logo.png"></a>
+				         	</div>
+				          	<div class="collapse navbar-collapse" id="myNavbar">
+					          	<ul class="nav_bar_right">
+									<li class="active"><a href="#">ES</a></li>
+									<li><a href="#">CA</a></li>
+									<li class="nav_last_list"><a href="#">EN</a></li>
+								</ul>
+						         <ul class="nav navbar-nav">
+						         	<li><a href="#">QUIENES SOMOS</a></li>
+									<li><a href="#">SOLUCIONES</a></li>
+									<li class="active"><a href="#">OBJETIVOS  </a></li>
+									<li><a href="#">TECNOLOGÍA  </a></li>
+									<li><a href="#">VITALIS </a></li>
+									<li><a href="#">CASOS DE ÉXITO</a></li>
+									<li><a href="#">CONTACTO</a></li>
 
-		         </div>
-		          <div class="collapse navbar-collapse" id="myNavbar">
-		          	<ul class="nav_bar_right">
-						<li class="active"><a href="#">ES</a></li>
-						<li><a href="#">CA</a></li>
-						<li class="nav_last_list"><a href="#">EN</a></li>
-					</ul>
-			         <ul class="nav navbar-nav">
-			         	<li><a href="#">QUIENES SOMOS</a></li>
-						<li><a href="#">SOLUCIONES</a></li>
-						<li class="active"><a href="#">OBJETIVOS  </a></li>
-						<li><a href="#">TECNOLOGÍA  </a></li>
-						<li><a href="#">VITALIS </a></li>
-						<li><a href="#">CASOS DE ÉXITO</a></li>
-						<li><a href="#">CONTACTO</a></li>
+						         </ul>
+					     	</div>
+				    	</nav>				
+		        	</div>  <!-- inner_nav -->
+		    	</div> <!-- col-12 ends -->
+		    </div> 
+		 </div> <!-- container -->
+			<div class="container">
+			    <div class="row content">
+			    	<div class="col-sm-12">
+			  			<div id="myCarousel" class="carousel slide home_slide login_slider" data-ride="carousel">				   
+					         <!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="../static/img/img/back_bg.jpg" alt="Los Angeles" style="width:100%;">
+										<div class="carousel-caption">
+											<p>Genera una atmósfera saludable en la empresa</p>
+										</div>
+								</div>
 
-			         </ul>
-			     </div>
+								<div class="item">
+									<img src="../static/img/img/back_bg.jpg" alt="Chicago" style="width:100%;">
+									<div class="carousel-caption">
+											<p>Genera una atmósfera saludable en la empresa</p>
+									</div>
+								</div>
+							</div>
+					        <!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								<span class="left"><</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+								<span class="right">></span>
+							</a>
+			  			</div> <!-- home_slide -->
 
-		    </nav>
-	        
-					
-        </div>  <!-- inner_nav -->
-    </div> <!-- page_background -->
+			    	</div> <!-- col-12 ends -->
+			    </div> 
+			</div> <!-- container -->
+			<div class="container">
+			    <div class="row content">
+					<div class="col-sm-12 footer_bottom">
+				        <footer class="footer_dashboard">
+				          <p> &copy; 2018 Vitalsfera. Todos los derechos reservados.</p>
+				          <img src="../static/img/img/footer_logo.png">
+				          <div class="clear_both"></div>
+				        </footer>
+				      </div>
+			    </div>
+			</div>
+		</div>    <!-- page_background -->
     </body>
 </html>
