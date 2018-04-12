@@ -924,7 +924,6 @@ MEDIAQUERIES
 	{
        background-color: #fff;
        border:0;
-       top: 83px;
     }
     img 
     {
@@ -1131,14 +1130,15 @@ MEDIAQUERIES
         {
             display: block;
         }
-    .footer_sidebar p
+    .footer_sidebar p, .footer_dashboard p, footer p
         {
-            font-size: 10px;
+            font-size: 8px;
             float: left;
         }
-    .footer_sidebar img
+    .footer_sidebar img, .footer_dashboard img, footer img
         {
             float: right;
+            max-width: 84px;
 
         }
        
