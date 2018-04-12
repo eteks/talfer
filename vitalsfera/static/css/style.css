@@ -128,7 +128,7 @@ ol, ul
 .inner_nav ul.navbar-nav 
 {	
 	float: right;
-	margin-top: 55px;
+	margin-top: 85px;
 }
 .inner_nav ul > li > a
 {
@@ -758,6 +758,10 @@ ol, ul
 /* ---------------------------------------------------
 Form over slider
 ----------------------------------------------------- */
+.login_nav ul.navbar-nav
+{
+	margin-top:55px !important;
+}
 #myCarousel 
 { 
 	position:relative;
