@@ -83,6 +83,16 @@
 	color: #000 !important;
 	background-color: none !important;
 }*/
+.navbar-brand
+{
+	float: none !important;
+	height: auto !important;
+	display: block;
+}
+#myNavbar
+{
+	float: right;
+}
 ol, ul
 {
     margin:0;
@@ -94,7 +104,8 @@ ol, ul
 {
 	color: #55565a !important;
 }
-.social_icon i {
+.social_icon i 
+{
     color: #1e9bd7 !important;
     background-color: #fff;
     -moz-border-radius: 12px 12px 12px 12px;
@@ -104,16 +115,16 @@ ol, ul
     text-align: center;
     padding-top: 6px;
     border-radius: 12px;
-    }
+}
 .inner_nav .navbar-default
 {
 	border:0;
 	background-color:#fff;
 }
 .inner_nav ul.navbar-nav 
-{
-	margin-top: 85px;
+{	
 	float: right;
+	margin-top: 55px;
 }
 .inner_nav ul > li > a
 {
@@ -403,15 +414,10 @@ text-align: justify;
 /* ---------------------------------------------------
     Dashboard
 ----------------------------------------------------- */
-
-    
 /* Set gray background color and 100% height */
 .page_bgcolor
-{
-	
- 	background-color: #d9dcd7;
-		padding-bottom: 5%;
-		padding-top:5%;
+{	
+	background-color: #d9dcd7;
 }
 .sidenav 
 {
@@ -432,68 +438,68 @@ text-align: justify;
 .sidenav .sidenav_first > li
 {
   /*box-shadow: 1px 1px #000;*/
- }
-	.sidenav .sidenav_first .active > a
+}
+.sidenav .sidenav_first .active > a
 {
   background-color: #1e9bd7;
-	}
- .sidenav .sidenav_first > li a
- {
+}
+.sidenav .sidenav_first > li a
+{
+	color: #fff;
+	border-radius:0;
+	text-align: right;
+}
+.sidenav .sidenav_first > li a:hover
+{
  	color: #fff;
+ 	background-color: #1e9bd7;
  	border-radius:0;
- 	text-align: right;
- 	
-     }
-      .sidenav .sidenav_first > li a:hover
-     {
-     	color: #fff;
-     	background-color: #1e9bd7;
-     	border-radius:0;
-     }
-     .sidenav_second ul.nav_bar_right >li a
-     {
-     	color: #fff
-     	background-color:#bab9ba !imp;
-     }
-       .sidenav .sidenav_second > li a
-     {
-     	color: #fff;
-     	background-color: #bab9ba;
-     }
-     .sidenav .sidenav_second > li a:hover
-     {
-     	 background-color: #1e9bd7;
-     	 text-decoration: none;
-     }
-     .sidenav_second
-     {
-     	background-color: #fff;
-		padding-right: 4%;
-		padding-left: 61.5%;
-		padding-bottom: 4%;
-		padding-top: 4%;
-     }
-     .sidenav_bottom img
-     {
-     	min-width: 100%;
-		padding: 15px 0;
-		max-width: 100%;
-     }
-     .dash_board_slider, .login_slider
-     {
-     	border: 25px solid #fff;
-     }
+}
+.sidenav_second ul.nav_bar_right >li a
+{
+ 	color: #fff
+ 	background-color:#bab9ba !imp;
+}
+.sidenav .sidenav_second > li a
+{
+ 	color: #fff;
+ 	background-color: #bab9ba;
+}
+.sidenav .sidenav_second > li a:hover
+{
+	background-color: #1e9bd7;
+ 	text-decoration: none;
+}
+.sidenav_second
+{
+ 	background-color: #fff;
+	padding-right: 4%;
+	padding-left: 61.5%;
+	padding-bottom: 4%;
+	padding-top: 4%;
+}
+.sidenav_bottom img
+{
+ 	min-width: 100%;
+	padding: 15px 0;
+	max-width: 100%;
+}
+.dash_board_slider, .login_slider
+{
+   	border: 25px solid #fff;
+}
 
  /* Set black background color, white text and some padding */
-.footer_dashboard {
+.footer_dashboard 
+{
   background-color: #fff;
   color: #656669;
- 
 }
 .footer_bottom
 {
 	padding-left: 0;
     padding-right:0;
+    margin-top: 20px;
 }
 .home_slide .carousel-caption h4 
 {
@@ -503,11 +509,96 @@ text-align: justify;
 {
 	border: 1px solid #1e9bd7;
 }
+/* ---------------------------------------------------
+Form over slider
+----------------------------------------------------- */
+#myCarousel 
+{ 
+	position:relative;
+}
+.form_slider 
+{
+	position:absolute;
+	z-index:9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255,255,255,0.8);
+	padding: 2%;
+	width: 490px;
+	height: 390px
+}
+.form_slider p
+{
+	font-size: 18px;
+	font-family: titilliumweb_regular;
+	color: #55565a;
+}
+.forget_text ,.forget_text label
+{
+	font-size: 12px;
+	color: #474849;
+	font-family: titilliumweb_regular;
+}
+.form_slider label
+{
+	font-size: 12px;
+	color: #474849;
+	font-family: titilliumweb_regular;
+	font-weight: normal;
+}
+.bot_line
+{
+	border-top: 0.5px solid #87888a;
+}
+.login_button
+{
+  width:100%;
+  font-family: titilliumweb_regular; 
+  background-color: #1999d2;
+  height: 30px;
+  font-size: 18px;
+  color: #fff;
+  border: 0;
+  /*margin-bottom: 10px;*/
 
+}
+.form-control
+{
+	height: 30px !important;
+}
+.entry_form
+{
+	padding: 0 80px;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+.entry_form input
+{
+	border: 1px solid #1999d2;
+	border-radius: 0px;
+	font-family: titilliumweb_regular; 
+}
+::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+  color: #b4d6ec !important;
+}
+::-moz-placeholder 
+{ /* Firefox 19+ */
+  color: #b4d6ec !important;
+}
+:-ms-input-placeholder 
+{ /* IE 10+ */
+  color: #b4d6ec !important;
+}
+:-moz-placeholder 
+{ /* Firefox 18- */
+  color: #b4d6ec !important;
+}
 /* ---------------------------------------------------
 MEDIAQUERIES
 ----------------------------------------------------- */
-
 @media (max-width: 992px) 
 {
 	.mas_info
@@ -543,16 +634,6 @@ MEDIAQUERIES
 }
 @media (max-width: 768px) 
 {
-	/*.carousel-control.right {
-	    right: 38px !important;
-	}
-	.home_slide .carousel-control {
-	    width: 0 !important;
-	    top: unset !important;
-	    font-size: 25px !important;
-	    left: unset !important;
-	    right: 76px !important;
-	}*/
 	.modules > div
 	{
 		min-width:200px;
@@ -594,6 +675,59 @@ MEDIAQUERIES
 	{
 		text-align: center;
 	}
+	/*Form*/
+	.form_slider 
+	{
+	position:absolute;
+	z-index:9999;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(255,255,255,0.8);
+	width: 250px;
+	height: 240px
+	}
+	.form_slider p
+	{
+    	font-size: 13px;
+    	margin-top: 3px !important; 
+    	margin-bottom: 3px !important;  
+	}
+	.login_button
+	{
+		font-size: 13px;
+		padding: 1px;
+		height: 25px;
+	}
+	.login_slider 
+	{
+    	border: 0px solid #fff;
+	}
+	.form-group 
+	{
+	    margin-bottom: 5px !important;
+	}
+	.form-control
+	{
+		height: 25px !important;
+	}
+	/*Form ends*/
+	.home_slide .carousel-control .right
+	{
+		padding: 0 6px !important;		
+	}
+	.home_slide .carousel-control .left
+	{
+		padding: 0 6px !important;		
+	}
+	.home_slide .carousel-control
+	{
+    	font-size: 20px !important;
+	}
+	.entry_form
+	{
+		padding: 0px;
+	}
 }
 @media (max-width: 1218px) 
 {
@@ -604,9 +738,11 @@ MEDIAQUERIES
 }
 @media screen and (max-width: 767px) 
 {
-      .sidenav {
+    .sidenav
+    {
         height: auto;
         padding: 15px;
-      }
-     
-    }
+    }     
+}
+#myCarousel { position:relative;}
+#form {position:absolute; margin: 0 auto; z-index:9999;}

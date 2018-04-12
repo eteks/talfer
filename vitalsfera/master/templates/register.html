@@ -73,13 +73,26 @@
 			  				 <form class="entry_form" action="index">
 		                       <p>INICIAR SESIÓN</p>                    
 		                        <div class="form-group">
+		                          <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Nombre y Apellidos">
+		                        </div>
+		                        <div class="form-group">
 		                          <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="Email">
+		                        </div>
+		                        <div class="form-group">
+		                          <input type="text"  class="form-control" id="formGroupExampleInput" placeholder="Código">
+		                        </div>
+		                        <div class="form-group">
+		                          <input type="password"  class="form-control" id="formGroupExampleInput" placeholder="Contraseña">
+		                        </div>
+		                        <div class="form-group">
+		                          <input type="password"  class="form-control" id="formGroupExampleInput" placeholder="Repetir Contraseña">
 		                        </div>		                        		                        
-		                        <button href="{% url 'login_pass' %}" type="submit" class="login_button">CONTINUAR</button>
-		                        <p class="text-right"> <a class="forget_text" href="#">¿Necesitas Ayuda?</a></p>
-		                        <hr class="bot_line">
-		                        <p>¿ERES NUEVO?</p>
-		                        <button href="register.html" type="submit" class="login_button">REGÍSTRATE</button>
+		                        <button type="submit" class="login_button">CONTINUAR</button>
+		                        <!-- <p class="text-right"> <a class="forget_text" href="#">¿Has Olvidado Contraseña?</a></p> -->
+		                        <label>
+							      <input type="checkbox" name="remember"> Estoy de acuerdo con los términos y <a>condiciones de uso
+y política de privacidad.</a>
+							    </label>							    
 		                      </form> 
 			  			</div>				   
 					         <!-- Wrapper for slides -->

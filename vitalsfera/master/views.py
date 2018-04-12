@@ -11,3 +11,7 @@ class Login_pageview(TemplateView):
     template_name = "login.html"
 class Dashboard_pageview(TemplateView):
     template_name = "dashboard.html"
+class Loginpass_pageview(TemplateView):
+    template_name = "login_pass.html"
+class Register_pageview(TemplateView):
+    template_name = "register.html"

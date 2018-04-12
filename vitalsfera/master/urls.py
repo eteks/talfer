@@ -7,4 +7,6 @@ urlpatterns = [
     url(r'^home/$', views.Home_pageview.as_view(), name='home'), # Notice the URL has been named
     url(r'^login/$', views.Login_pageview.as_view(), name='login'),
     url(r'^dashboard/$', views.Dashboard_pageview.as_view(), name='dashboard'),
+    url(r'^login_pass/$', csrf_exempt(views.Loginpass_pageview.as_view()), name='login_pass'),
+    url(r'^register/$', views.Register_pageview.as_view(), name='register'),
     ]
