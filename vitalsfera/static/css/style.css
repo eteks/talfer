@@ -359,9 +359,17 @@ text-align: justify;
 	color:#fff;
 	border:1px solid #fff;
 }
-.home_block_one_inner_one img, .home_block_three_inner_two img, .home_block_four_inner_one img,.home_block_five_inner_two img,.home_block_six_inner_one img
+.home_block_one_inner_one img, .home_block_three_inner_two img, .home_block_four_inner_one img,.home_block_six_inner_one img
 {
 	padding-top:50px;
+}
+.home_block_five_inner_two img
+{
+	padding: 0px;
+}
+.home_block_five_inner_two
+{
+	padding: 50px 0 !important;
 }
 .home_block_seven h2
 {
