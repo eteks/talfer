@@ -823,7 +823,18 @@ Form over slider
   font-size: 18px;
   color: #fff;
   border: 0;
+  display: block;
   /*margin-bottom: 10px;*/
+}
+a.login_button
+{
+	height: auto;
+	padding: 2px 0px;
+}
+a.login_button:hover
+{
+	text-decoration: none;
+	color: #fff;
 }
 .footer_sidebar 
 {
