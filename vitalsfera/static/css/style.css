@@ -78,11 +78,6 @@
 	margin-left: 5px;
 	margin-top: 11px;
 }
-/*.nav_last_list ul  > li > a
-{
-	color: #000 !important;
-	background-color: none !important;
-}*/
 .navbar-brand
 {
 	float: none !important;
@@ -203,11 +198,12 @@ footer img
 	left: unset !important;
 	right: 100px !important;
 }
-.carousel-control.right
+.home_slide .carousel-control.right
 {
 	right:48px !important;
 }
-.home_slide .carousel-caption {
+.home_slide .carousel-caption
+ {
     right: 20%;
     left: 20%;
     padding-bottom: 280px;
@@ -451,6 +447,20 @@ text-align: justify;
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
+.side_top
+{
+    background-color: #009191;
+    color:#fff;
+    padding:10px;
+}
+.side_top span
+{
+    float: right;
+}
+.side_top 
+{
+    display: none;
+}
 #sidebar 
 {
     width: 275px;
@@ -541,6 +551,8 @@ a[aria-expanded="true"]::before
     color: #000;
     font-size: 24px;
     padding-top: 8%;
+    float: right;
+    font-family:titilliumweb_semibold;
  }
  .sidenav_second ul.nav_bar_right >li a
  {
@@ -636,7 +648,7 @@ ol, ul
     top: 86% !important;
     font-size: 40px !important;
     left: unset !important;
-    /*right: 100px !important;*/
+   /* right: 100px !important;*/
 }
 .dash_board_slider_inner .carousel-control .left
 {
@@ -671,7 +683,8 @@ ol, ul
 .menu_bar li > a
 {
   text-decoration: none;
-
+  color:#656669;
+  font-family: titilliumweb_bold;
 }
 .menu_bar .top
 {
@@ -700,7 +713,7 @@ ol, ul
     font-family: titilliumweb_semibold;
 }
 /*dropmenu*/
-.dropdown-menu
+.menu_bar .dropdown-menu
 {
     left:unset;
     right:1% !important;
@@ -708,7 +721,7 @@ ol, ul
     border-radius: 0;
     padding:0;
 }
-.dropdown-menu a
+.menu_bar .dropdown-menu a
 {
     display: block;
     text-decoration: none;
@@ -717,7 +730,7 @@ ol, ul
     color:#fff !important;
     border-bottom: 1px solid #45464a;
 }
-.dropdown-menu a:hover
+.menu_bar .dropdown-menu a:hover
 {
     display: block;
     text-decoration: none;
@@ -727,7 +740,7 @@ ol, ul
     border-bottom: 1px solid #45464a;
     background-color: #45464a;
 }
-.dropdown-menu a:last-child 
+.menu_bar .dropdown-menu a:last-child 
 {
     border-bottom: 0;
 }
@@ -828,6 +841,7 @@ Form over slider
 #content.active
 {
     width: 100%;
+    overflow-x: hidden;
 }
 
 #sidebarCollapse
@@ -988,7 +1002,12 @@ MEDIAQUERIES
 	.home_slide .carousel-control
 	{
     	font-size: 20px !important;
+        right: 52px !important;
 	}
+    .home_slide .carousel-control.right
+    {
+        right: 26px !important;
+    }
 	.entry_form
 	{
 		padding: 0px;
@@ -1048,19 +1067,16 @@ MEDIAQUERIES
     {
         display: none;
     }
-    .dash_board_slider_inner .carousel-control
-    {
-        top: 72% !important;
-        font-size: 21px !important;
-    }
-    .dash_board_slider_inner .carousel-control .right 
-    {
-        margin-left: -3px;
-    }
-    .dash_board_slider_inner .carousel-control .left
+     .dash_board_slider_inner .carousel-control
      {
-        margin-left: 13px;
+         top: 72% !important;
      }
+    .dash_board_slider_inner .carousel-control 
+    {
+
+        font-size: 20px !important;
+        right: 58px !important;
+    }
     .db_content_logo
       {
         display: block;
@@ -1085,7 +1101,7 @@ MEDIAQUERIES
     {
         background-color: unset;
         padding:30px !important;
-     margin-bottom: 100px;
+        margin-bottom: 100px;
     }
     .nav_bar_right
     {
@@ -1135,6 +1151,22 @@ MEDIAQUERIES
         {
                 display:none;
         }
+        .side_top 
+        {
+            display: block;
+        }
+        #content.active 
+        {
+            width: calc(100% - 320px);
+        }
+        /*#sidebar
+        {
+            width: 320px;
+        }
+        #content.active  #sidebar
+        {
+             overflow-x: hidden; 
+        }*/
 }
 @media (max-width: 1218px) 
 {
