@@ -1168,16 +1168,11 @@ MEDIAQUERIES
         }
         #content.active 
         {
-            width: calc(100% - 320px);
+            width: 100%;
+            left: 275px;
+            position: relative;
         }
-        /*#sidebar
-        {
-            width: 320px;
-        }
-        #content.active  #sidebar
-        {
-             overflow-x: hidden; 
-        }*/
+
 }
 @media (max-width: 1218px) 
 {
