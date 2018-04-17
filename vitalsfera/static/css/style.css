@@ -478,7 +478,15 @@ text-align: justify;
     font-family: titilliumweb_semibold;
     padding:10px;
     margin: 0;
-    text-decoration: none;
+    border-bottom                                                         
+}
+.side_top span a
+{
+  text-decoration:none;
+}
+.side_top span a:hover
+{
+    color: #fff;
 }
 .side_top .close_icon
 {
