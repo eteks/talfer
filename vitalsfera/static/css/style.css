@@ -1,4 +1,4 @@
-/*FONTS*/
+menu_bar/*FONTS*/
 @font-face 
 {
     font-family: titilliumweb_regular;
@@ -474,7 +474,7 @@ text-align: justify;
 .side_top a,.side_top p
 {
     color: #fff;
-    font-size: 14px;
+    font-size: 9px;
     font-family: titilliumweb_semibold;
     padding:10px;
     margin: 0;
@@ -515,7 +515,7 @@ text-align: justify;
 #sidebar ul li a 
 {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 12px;
     display: block;
 }
 #sidebar ul li a:hover {
@@ -598,7 +598,7 @@ a[aria-expanded="true"]::before
  .sidenav_second
  {
     background-color: #fff;
-    padding-left: 41%;
+    padding-left: 40%;
     padding-bottom: 8%;
     padding-right: 8%;
  }
@@ -610,10 +610,28 @@ a[aria-expanded="true"]::before
  }
  .sidenav_first  ul 
  {
-    list-style-type: none;
     display:none;
-    padding: 0px;
+    position: absolute;
+    left: 237px;
+    z-index: 1005;
+    top: 0;
+    width: 217px;
  }
+ .sidenav_first  ul li
+ {
+    list-style-type: none;
+ }
+  .sidenav_first  ul li a
+  {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left !important;
+  }
+ .mCSB_container,.mCustomScrollBox
+    {
+        overflow: visible !important;
+    }
+
  .sidenav_first li.active ul
 {
     display:block;
@@ -746,6 +764,29 @@ ol, ul
 .part_two
 {
     float: right;
+    position: relative;
+}
+.scrollTop 
+{
+    color: #fff;
+    background-color:#1e9bd7;
+    padding: 1px 7px;
+    position: absolute;
+    right: 5%;
+    bottom: 2%;
+    font-size: 26px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+.scrollTop a
+{
+     color: #fff;
+     text-decoration: none;
+
 }
 .dashboard_content
 {
@@ -979,6 +1020,12 @@ MEDIAQUERIES
 }
 @media (max-width: 768px) 
 {
+     .sidenav_first  ul 
+     {            
+        position: static;
+        width:100%;
+        padding:0;
+     }
 	.modules > div
 	{
 		min-width:200px;
@@ -1256,6 +1303,20 @@ MEDIAQUERIES
             display: block;
             float: right;
             padding-right:44px;
+        }
+        .hider a
+        {
+             color: rgba(255,255,255,0.5) !important;
+        }
+        .hider span
+        {
+            float: left;
+            padding-right:9px;
+            color: rgba(255,255,255,0.5) !important;
+        }
+        .part_two span
+        {
+            right: 14% !important;
         }
 }
 @media (max-width: 1218px) 
