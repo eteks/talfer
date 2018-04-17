@@ -249,11 +249,15 @@ footer img
 	font-size:20px;
 	border:1px solid #656669;
 	border-radius:10px;
-	max-width: 42%;
+	max-width: 47%;
     padding: 3px 30px;
     text-align: center;
     margin: auto;
     font-family: titilliumweb_regular;
+}
+.mas_info span
+{
+    margin-right: 10px;
 }
 .home_block_two
 {
@@ -311,6 +315,13 @@ footer img
     border-radius: 4px;
     text-align: center !important;
 }
+.module_mas_info span
+{
+    float: left !important;
+    padding-left:10px;
+
+}
+
 .modules p span
 {
 	float: right;
@@ -459,11 +470,18 @@ text-align: justify;
 {
     background-color: #009191;
     color:#fff;
-    padding:10px;
 }
-.side_top span
+.side_top a,.side_top p
 {
-    float: right;
+    color: #fff;
+    font-size: 14px;
+    font-family: titilliumweb_semibold;
+    padding:10px;
+    margin: 0;
+}
+.side_top .close_icon
+{
+    float: right !important;
 }
 .side_top 
 {
@@ -592,14 +610,34 @@ a[aria-expanded="true"]::before
  }
  .sidenav_first  ul 
  {
-    position:absolute;
-    right:0;
+    list-style-type: none;
+    display:none;
+    padding: 0px;
  }
+ .sidenav_first li.active ul
+{
+    display:block;
+}
+ .sidenav .submenu
+ {
+    transform: uppercase;
+ }
+ .sidenav_first span
+ {
+    display: none;
+ }
+  .sidenav_first li.active span
+  {
+    display: none;
+  }
 .db_content_logo
   {
     background-color: #fff;
     text-align: center;
-    padding:20px 0;
+  }
+  .db_content_logo img
+  {
+    width:185px;
   }
   .db_content_logo
   {
@@ -607,8 +645,9 @@ a[aria-expanded="true"]::before
   }
 .logo_dashboard
 {
-    padding: 30px;
+    padding: 20px 0;
     background-color: #fff;
+    text-align: center;
 }
 .nav_bar_right
 {
@@ -648,7 +687,7 @@ ol, ul
     color: #fff;
     text-align: left !important;
     text-shadow:0;
-    top: 8% !important;
+    top: 8%;
     left: 5% !important;
 }
 .dash_board_slider_inner .carousel-control {
@@ -719,6 +758,13 @@ ol, ul
     color : #1e9bd7;
     font-size: 30px;
     font-family: titilliumweb_semibold;
+}
+.toggle_btn
+{
+    background-color: #eeeeee;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
 }
 /*dropmenu*/
 .menu_bar .dropdown-menu
@@ -964,7 +1010,7 @@ MEDIAQUERIES
 	{
 	 font-size:22px;
 	}
-	.home_block_one_inner_two p, .home_block_three_inner_one p, .home_block_five_inner_one p,.home_block_four_inner_two p, .home_block_six_inner_two, .objective_P p, .dashboard_content p
+	.home_block_one_inner_two p, .home_block_three_inner_one p, .home_block_five_inner_one p,.home_block_four_inner_two p, .home_block_six_inner_two, .objective_P p
 	{
 
 	font-size:12px;
@@ -976,14 +1022,14 @@ MEDIAQUERIES
 	/*Form*/
 	.form_slider 
 	{
-	position:absolute;
-	z-index:9999;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: rgba(255,255,255,0.8);
-	width: 250px;
-	height: 240px
+        	position:absolute;
+        	z-index:9999;
+        	top: 50%;
+        	left: 50%;
+        	transform: translate(-50%, -50%);
+        	background: rgba(255,255,255,0.8);
+        	width: 250px;
+        	height: 240px
 	}
 	.form_slider p
 	{
@@ -1034,7 +1080,7 @@ MEDIAQUERIES
     .dash_board_slider_inner .carousel-caption h4 
 	{
 	 font-size: 12px !important;
-	  padding-bottom: 9%;
+	  padding-bottom:0;
 	}
 	 #sidebar 
     {
@@ -1057,7 +1103,6 @@ MEDIAQUERIES
     #sidebarCollapse
     {   
         display:block;
-        position: absolute;
     }  
     .dashboard_content
     {
@@ -1067,6 +1112,11 @@ MEDIAQUERIES
     {
       padding: 0 15px !important;
     }
+    .dashboard_content p
+    {
+        font-size: 16px;
+    }
+
     .part_one
     {
         padding-right:0 !important;
@@ -1140,10 +1190,18 @@ MEDIAQUERIES
         left: 5%;
         padding-bottom:10px;
         }
+    .dash_board_slider_inner .carousel-caption
+    {
+        top: -13% !important;;
+    }
     .dash_board_slider_inner .carousel-caption p
         {
             font-size: 12px !important;
             font-family: titilliumweb_bold;
+        }
+    .dash_board_slider_inner .carousel-caption img
+        {
+            width:55px;
         }
     #sidebar
         {
@@ -1176,16 +1234,29 @@ MEDIAQUERIES
         }
         #content.active 
         {
-            width: calc(100% - 320px);
+            width: 100%;
+            left: 275px;
+            position: relative;
+
         }
-        /*#sidebar
+        .logo_dashboard img
         {
-            width: 320px;
+            width:180px;
         }
-        #content.active  #sidebar
+        .logo_dashboard
         {
-             overflow-x: hidden; 
-        }*/
+            padding:10px; 
+        }
+        .toggle_btn
+        {
+            display: block;
+        }
+        .sidenav_first span
+        {   
+            display: block;
+            float: right;
+            padding-right:44px;
+        }
 }
 @media (max-width: 1218px) 
 {
@@ -1193,6 +1264,15 @@ MEDIAQUERIES
 	{
 		margin-left:0;
 	}
+  .dash_board_slider_inner .carousel-caption
+    {
+       top: -9%;
+    }
+    .dash_board_slider_inner .carousel-control
+    {
+         top: 80%;
+    }
+   
 }
 
 
