@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
       
-   {% block title %} Login {% endblock %}
+   {% block title %} Home {% endblock %}
    {% load i18n %}
    {% block pagecontent %}
     <div id="myCarousel" class="carousel slide home_slide" data-ride="carousel">
@@ -39,12 +39,12 @@
   		<div class="home_block_one content_holder" id="block_1">
   			<div class="home_block_one_inner_one">
   				<img src ="../static/img/img/circle_list.png">
-  				<p class="text_1"><span>01.</span>My account</p>
-  				<p class="text_2"><span>02.</span>Courses and activities</p>
-  				<p class="text_3"><span>03.</span>Physical activity</p>
-  				<p class="text_4"><span>04.</span>Healthy services</p>
-  				<p class="text_5"><span>05.</span>Sports events</p>
-  				<p class="text_6"><span>06.</span>Store</p>
+  				<p class="text_1"><span>{% trans "01." %}</span>{% trans "My account" %}</p>
+  				<p class="text_2"><span>{% trans "02." %}</span>{% trans "Courses and activities" %}</p>
+  				<p class="text_3"><span>{% trans "03." %}</span>{% trans "Physical activity" %}</p>
+  				<p class="text_4"><span>{% trans "04." %}</span>{% trans "Healthy services" %}</p>
+  				<p class="text_5"><span>{% trans "05." %}</span>{% trans "Sports events" %}</p>
+  				<p class="text_6"><span>{% trans "06." %}</span>{% trans "Store" %}</p>
   			</div>
   			<div class="home_block_one_inner_two">
   				<h2>{% trans "VitalSfera helps manage and communicate healthy habits" %}</h2>
@@ -143,77 +143,77 @@
 				    <thead>
 				      <tr>
 				        <th class="table_con"></th>
-				        <th class="table_con col_two">Basic</th>
-				        <th class="table_con col_three">Standard</th>
-				        <th class="table_con col_four">Premium</th>
+				        <th class="table_con col_two">{% trans "Basic" %}</th>
+				        <th class="table_con col_three">{% trans "Standard" %}</th>
+				        <th class="table_con col_four">{% trans "Premium" %}</th>
 				      </tr>
 				    </thead>
 				    <tbody>
 				      <tr>
-				        <td class="table_con col_one">Sistema de inscripciones a actividades y cursos</td>
+				        <td class="table_con col_one">{% trans "Sistema de inscripciones a actividades y cursos" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Gestor de contenidos (noticias, videos, fotos…)</td>
+				        <td class="table_con col_one">{% trans "Gestor de contenidos (noticias, videos, fotos…)" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">App VitalSfera medición Actividad Física</td>
+				        <td class="table_con col_one">{% trans "App VitalSfera medición Actividad Física" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				      	<td class="table_con col_one">Sistema Connect a Wearables y Apps medición actividad física</td>
+				      	<td class="table_con col_one">{% trans "Sistema Connect a Wearables y Apps medición actividad física" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Sistema de encuestas</td>
+				        <td class="table_con col_one">{% trans "Sistema de encuestas" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Sistema y catálogo de puntos incentivos</td>
+				        <td class="table_con col_one">{% trans "Sistema y catálogo de puntos incentivos" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Creación y gestión de retos virtuales</td>
+				        <td class="table_con col_one">{% trans "Creación y gestión de retos virtuales" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Sistema de mensajería y seguimiento para profesionales de la salud de la empresa</td>
+				        <td class="table_con col_one">{% trans "Sistema de mensajería y seguimiento para profesionales de la salud de la empresa" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/cross.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
-				        <td class="table_con col_one">Dashboard analítico y reporting</td>
+				        <td class="table_con col_one">{% trans "Dashboard analítico y reporting" %}</td>
 				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
 				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one"></td>
-				        <td class="table_con col_two">Set Up Fee 6,000€</td>
-				        <td class="table_con col_three">Set Up Fee 10,000€</td>
-				        <td class="table_con col_four">Set Up Fee 15,000€</td>
+				        <td class="table_con col_two">{% trans "Set Up Fee 6,000€" %}</td>
+				        <td class="table_con col_three">{% trans "Set Up Fee 10,000€" %}</td>
+				        <td class="table_con col_four">{% trans "Set Up Fee 15,000€" %}</td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one"></td>
-				        <td class="table_con col_two">Precio/Año 3,500€ (Incluye hasta 4,000 empleados)</td>
-				        <td class="table_con col_three">Precio/Año 5,500€ (Incluye hasta 10,000 empleados)</td>
-				        <td class="table_con col_four">Precio/Año 10,000€ (Sin límite de empleados)</td>
+				        <td class="table_con col_two">{% trans "Precio/Año 3,500€ (Incluye hasta 4,000 empleados)" %}</td>
+				        <td class="table_con col_three">{% trans "Precio/Año 5,500€ (Incluye hasta 10,000 empleados)" %}</td>
+				        <td class="table_con col_four">{% trans "Precio/Año 10,000€ (Sin límite de empleados)" %}</td>
 				      </tr>
 				    </tbody>
 				  </table>
