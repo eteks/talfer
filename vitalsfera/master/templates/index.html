@@ -1,42 +1,33 @@
 {% extends 'base.html' %}
       
    {% block title %} Login {% endblock %}
-   
+   {% load i18n %}
    {% block pagecontent %}
-    
-        <div id="myCarousel" class="carousel slide home_slide" data-ride="carousel">
-			    <!-- Indicators -->
-			    <!-- <ol class="carousel-indicators">
-			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			      <li data-target="#myCarousel" data-slide-to="1"></li>
-			      <li data-target="#myCarousel" data-slide-to="2"></li>
-			    </ol> -->
-
-	         <!-- Wrapper for slides -->
+    <div id="myCarousel" class="carousel slide home_slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="item active">
 				<img src="../static/img/img/slide_one.jpg" alt="Los Angeles" style="width:100%;">
 					<div class="carousel-caption">
-						<p>Genera una atmósfera saludable en la empresa</p>
+						<p> {% trans "Genera una atmósfera saludable en la empresa " %}</p>
 					</div>
 				</div>
 
 				<div class="item">
 				<img src="../static/img/img/sail.jpg" alt="Chicago" style="width:100%;">
 				<div class="carousel-caption">
-						<p>Genera una atmósfera saludable en la empresa</p>
+						<p>{% trans "Genera una atmósfera saludable en la empresa" %}</p>
 				</div>
 				</div>
 
 				<div class="item">
 				<img src="../static/img/img/slide_one.jpg" alt="New york" style="width:100%;">
 				<div class="carousel-caption">
-						<p>Genera una atmósfera saludable en la empresa</p>
+						<p>{% trans "Genera una atmósfera saludable en la empresa" %}</p>
 				</div>
 				</div>
 			</div>
 
-	        <!-- Left and right controls -->
+			<!-- Left and right controls -->
 			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 				<span class="left"><</span>
 			</a>
@@ -50,13 +41,13 @@
   				<a href="{% url 'home' %}"><img src ="../static/img/img/circle_list.png"></a>
   			</div>
   			<div class="home_block_one_inner_two">
-  				<h2>VitalSfera helps manage and communicate healthy habits</h2>
-  				<p class="last_child"><strong>VitalSfera</strong> is a platform to communicate and manage all the healthy activities offered by the company to the employee, who by participating in them wins Vitalis, points redeemable.</p>
+  				<h2>{% trans "VitalSfera helps manage and communicate healthy habits" %}</h2>
+  				<p class="last_child"><strong>{% trans "VitalSfera" %}</strong>{% trans " is a platform to communicate and manage all the healthy activities offered by the company to the employee, who by participating in them wins Vitalis, points redeemable." %}</p>
   				<!-- <p><strong>Sistema Connect Plataforma conectada a los mejores wearables</strong> y dispositivos más usuales del mercado mercado .</p>
   				<p>Disponible para todos los smartphones, tablets y ordenadores.</p>
   				<p>Integración en el la web o <strong>entorno digital corporativo exclusivo</strong> mediante subdominio  o URL propia.</p>
   				<p class="last_child">También ofrecemos integración de nuestra <strong>App de VitalSfera</strong> como canal de salud corporativo para empresas.</p> -->
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>More information</div>
+  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</div>
   			</div>
   			<div class="clear_both"></div>
 
@@ -64,74 +55,74 @@
   		</div> <!-- home_block_one -->
   		<div class="home_block_two" id="block_2">
   			<div class="modules text-center  content_holder">
-  				<h2>Solutions</h2>
+  				<h2>{% trans "Solutions" %}</h2>
 	  			<div class="module_one">
 	  				<div class="module_inner">
-	  					<h4>Módulo 1</h4>
+	  					<h4>{% trans "Módulo 1" %}</h4>
 	  					<hr>
-	  					<p>Gestión de<br>Entrenamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Gestión de<br>Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Fisioterapia y<br>Tratamientos<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Dietética y<br>Nutrición<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>eFacturas y control<br>situación<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Ofertas Productos<br>y Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>More information</p>
+	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
 	  				</div>
 	  			</div>
 	  			<div class="module_two">
 	  				<div class="module_inner">
-	  					<h4>Módulo 2</h4>
+	  					<h4>{% trans "Módulo 2" %}</h4>
 	  					<hr>
-	  					<p>Gestión de<br>Entrenamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Gestión de<br>Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Fisioterapia y<br>Tratamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Dietética y<br>Nutrición<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>eFacturas y control<br>situación<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Ofertas Productos<br>y Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>More information</p>
+	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
 	  				</div>
 
 	  			</div>
 	  			<div class="module_three">
 	  				<div class="module_inner">
-	  					<h4>Módulo 3</h4>
+	  					<h4>{% trans "Módulo 3" %}</h4>
 	  					<hr>
-	  					<p>Gestión de<br>Entrenamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Gestión de<br>Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Fisioterapia y<br>Tratamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Dietética y<br>Nutrición<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>eFacturas y control<br>situación<span><img src="../static/img/img/cross.png"></span></p>
+	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Ofertas Productos<br>y Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>More information</p>
+	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
 	  				</div>
 	  			</div>
 	  			<div class="module_four">
 	  				<div class="module_inner">
-	  					<h4>Módulo 4</h4>
+	  					<h4>{% trans "Módulo 4" %}</h4>
 	  					<hr>
-	  					<p>Gestión de<br>Entrenamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Gestión de<br>Servicios<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
-	  					<p>Fisioterapia y<br>Tratamientos<span><img src="../static/img/img/tick.png"></span></p>
+	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
 	  					<p>Dietética y<br>Nutrición<span><img src="../static/img/img/tick.png"></span></p>
 	  					<hr class="inner_hr">
@@ -147,11 +138,11 @@
   		</div> <!-- home_block_two -->
   		<div class="home_block_three content_holder" id="block_3">
   			<div class="home_block_three_inner_one">
-  				<h2>Our goal is to generatea healthy atmosphere in the company</h2>
-  				<p>The VitalSfera platform acts as a corporate hub for the promotion of healthy habits.</p>
-  				<p>It allows grouping, managing, measuring and communicating in an easy way all the contents and activities related to the promotion of healthy habits and the prevention of occupational risks in the company.</p>
-  				<p class="last_child">It is an essential tool and a great help for certification as a Healthy Company</p>
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>More information</div>
+  				<h2>{%trans "Our goal is to generatea healthy atmosphere in the company" %}</h2>
+  				<p>{%trans "The VitalSfera platform acts as a corporate hub for the promotion of healthy habits." %}</p>
+  				<p>{%trans "It allows grouping, managing, measuring and communicating in an easy way all the contents and activities related to the promotion of healthy habits and the prevention of occupational risks in the company." %}</p>
+  				<p class="last_child">{% trans "It is an essential tool and a great help for certification as a Healthy Company" %}</p>
+  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{%trans "More information" %}</div>
   			
   			</div>
   			<div class="home_block_three_inner_two">
@@ -166,26 +157,26 @@
 	  				<img src ="../static/img/img/tabmob.png">
 	  			</div>
 	  			<div class="home_block_four_inner_two">
-	  				<h2>Responsive web technology and App for iOS / Android</h2>
-	  				<p><strong>VitalSfera</strong> is an interactive platform that allows working different areas of corporate health and well-being from any place with any device.</p>
-	  				<p>VitalSfera in addition has its own measurement system, and is also connected to the wearables and most common physical activity tracking devices in the market.</p>
-	  				<p>It is available for all smartphones, tablets and computers.</p>
-	  				<p>Includes a customized integration to the web or corporate digital environment through subdomain or own URL.We also offer full corporate customization of our VitalSfera Physical Activity Measurement App.</p>
+	  				<h2>{%trans "Responsive web technology and App for iOS / Android" %}</h2>
+	  				<p><strong>{%trans "VitalSfera" %}</strong>{%trans "is an interactive platform that allows working different areas of corporate health and well-being from any place with any device." %}</p>
+	  				<p>{%trans "VitalSfera in addition has its own measurement system, and is also connected to the wearables and most common physical activity tracking devices in the market." %}</p>
+	  				<p>{%trans "It is available for all smartphones, tablets and computers." %}</p>
+	  				<p>{%trans "Includes a customized integration to the web or corporate digital environment through subdomain or own URL.We also offer full corporate customization of our VitalSfera Physical Activity Measurement App." %}</p>
 	  				<p class="last_child"> </p>
-	  				<div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>More information</div>
+	  				<div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>{%trans "More information" %}</div>
 	  			</div>
   			</div>
   			<div class="clear_both"></div>
   		</div> <!-- home_block_four -->
   		<div class="home_block_five content_holder" id="block_5">
   			<div class="home_block_five_inner_one">
-  				<h2>Creating healthy atmospheres</h2>
-  				<p> The platform and technology of <strong>VitalSfera</strong> is working in many companies for all kinds of health promotion projects.</p>
+  				<h2>{%trans "Creating healthy atmospheres" %}</h2>
+  				<p>{%trans "The platform and technology of" %}<strong>{%trans "VitalSfera" %}</strong>{% trans "is working in many companies for all kinds of health promotion projects." %}</p>
   				<p class="last_child">Thousands of employees are breathing VitalSfera at work.</p>
   				<!-- <p>Disponible para todos los smartphones, tablets y ordenadores.</p>
   				<p>Integración en el la web o entorno digital corporativo mediante subdominio  o URL propia.</p>
   				<p class="last_child">También ofrecemos integración de nuestra App de VitalSfera como canal de salud corporativo para empresas, sistema Connect Plataforma conectada a los wearables y dispositivos más usuales del mercado mercado .</p> -->
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>More information</div>
+  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</div>
   			
   			</div>
   			<div class="home_block_five_inner_two text-center">
@@ -213,58 +204,58 @@
 	               
 	  			</div>
 	  			<div class="home_block_six_inner_two">
-	  				<h2>“Vitalis” Rewarding Program </h2>
-	  				<p>VitalSfera has a rewaring program to engage employees to the VitalSfera healthy habits platform.</p>
-	  				<p class="last_child">Employees participation in health promotion activities and physical activity help users get  "Vitalis" points redeemable in the catalog or benefit system company has.</p>
+	  				<h2>{%trans "“Vitalis” Rewarding Program" %} </h2>
+	  				<p>{%trans "VitalSfera has a rewaring program to engage employees to the VitalSfera healthy habits platform." %}</p>
+	  				<p class="last_child">{%trans "Employees participation in health promotion activities and physical activity help users get" %} {%trans "Vitalis" %}{% trans "points redeemable in the catalog or benefit system company has." %}</p>
 	  				<!-- <p class="last_child">Puesta en marcha de un Programa de Puntos, llamados Vitalis, en el que los miembros registrados en el portal de salud VitalSfera podrán ir monitorizando su actividad física diaria y acumular<strong>Vitalis canjeables por productos y servicios saludables.</strong> </p> -->
-	  			    <div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>More information</div>
+	  			    <div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>{% trans "More information" %}</div>
 	  			</div>
 	  		</div>	
   			<div class="clear_both"></div>
   		</div> <!-- home_block_six -->
   		<div class="home_block_seven" id="block_7">
-  			<h2>Contact Us</h2>
+  			<h2>{% trans "Contact Us" %}</h2>
 			<div class="container">
 				<form class="form-horizontal" action="/action_page.php">
 					<div class="form-group">
-					<label class="control-label col-sm-2">Name and Surname</label>
+					<label class="control-label col-sm-2">{% trans "Name and Surname" %}</label>
 					<div class="col-sm-10">
 					<input type="text" class="form-control" id="" placeholder="" name="">
 					</div>
 					</div>
 					<div class="form-group">
-					<label class="control-label col-sm-2" for="">Company</label>
+					<label class="control-label col-sm-2" for="">{% trans "Company" %}</label>
 					<div class="col-sm-10">
 					<input type="text" class="form-control" id="" placeholder="" name="">
 					</div>
 					</div>
 					<div class="form-group">
-					<label class="control-label col-sm-2" for="email">Email</label>
+					<label class="control-label col-sm-2" for="email">{% trans "Email" %}</label>
 					<div class="col-sm-10">
 					<input type="text" class="form-control" id="email" placeholder="" name="">
 					</div>
 					</div>
 					<div class="form-group">
-					<label class="control-label col-sm-2" for="">Phone</label>
+					<label class="control-label col-sm-2" for="">{% trans "Phone" %}</label>
 					<div class="col-sm-10">          
 					<input type="text" class="form-control" id="" placeholder="" name="">
 					</div>
 					</div>
 					<div class="form-group">
-					<label class="control-label col-sm-2" for="">Subject</label>
+					<label class="control-label col-sm-2" for="">{% trans "Subject" %}</label>
 					<div class="col-sm-10">
 					<input type="text" class="form-control" id="" placeholder="" name="">
 					</div>
 					</div>
 					<div class="form-group">
-					<label class="control-label col-sm-2" for="">Message</label>
+					<label class="control-label col-sm-2" for="">{% trans "Message" %}</label>
 					<div class="col-sm-10">
 					<textarea type="text" class="form-control text_content" id="" placeholder="" name=""></textarea>
 					</div>
 					</div>
 					<div class="form-group">        
 					<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="enviar_button">SEND</button>
+					<button type="submit" class="enviar_button">{% trans "SEND" %}</button>
 					</div>
 					</div>
 					<div class="clear_both"></div>

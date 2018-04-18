@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
-      
-   {% block title %} Login {% endblock %}
-   
-   {% block formcontent %}
+{% block title %} Login {% endblock %}
+{% load i18n %}
+{% block formcontent %}
 
 <div class="page_bgcolor">
 			    <div class="content mid-content">
@@ -10,15 +9,15 @@
 			  			<div id="myCarousel" class="carousel slide home_slide login_slider" data-ride="carousel">
 			  			<div class="form_slider">
 			  				 <form class="entry_form" action="{% url 'login_pass' %}">
-		                       <p>INICIAR SESIÓN</p>                    
+		                       <p>{%trans "INICIAR SESIÓN" %}</p>                    
 		                        <div class="form-group">
 		                          <input type="email"  class="form-control" id="formGroupExampleInput" placeholder="Email">
 		                        </div>		                        		                        
-		                        <button type="submit" class="login_button">CONTINUAR</button>
+		                        <button type="submit" class="login_button">{%trans "CONTINUAR" %}</button>
 		                        <p class="text-right"> <a class="forget_text" href="#">¿Necesitas Ayuda?</a></p>
 		                        <hr class="bot_line">
-		                        <p>¿ERES NUEVO?</p>
-		                        <a  href="{% url 'register' %}" type="submit" class="login_button text-center">REGÍSTRATE</a>
+		                        <p>{%trans "¿ERES NUEVO?" %}</p>
+		                        <a  href="{% url 'register' %}" type="submit" class="login_button text-center">{%trans "REGÍSTRATE" %}</a>
 		                      </form> 
 			  			</div>				   
 					         <!-- Wrapper for slides -->
@@ -26,14 +25,14 @@
 								<div class="item active">
 									<img src="../static/img/img/back_bg.jpg" alt="Los Angeles" style="width:100%;">
 										<div class="carousel-caption">
-											<p>Genera una atmósfera saludable en la empresa</p>
+											<p>{%trans "Genera una atmósfera saludable en la empresa" %}</p>
 										</div>
 								</div>
 
 								<div class="item">
 									<img src="../static/img/img/back_bg.jpg" alt="Chicago" style="width:100%;">
 									<div class="carousel-caption">
-											<p>Genera una atmósfera saludable en la empresa</p>
+											<p>{%trans "Genera una atmósfera saludable en la empresa" %}</p>
 									</div>
 								</div>
 							</div>
