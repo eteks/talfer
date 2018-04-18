@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -39,7 +40,7 @@
      <body>
     
       {% if 'dashboard' in request.path %}
-            {% include 'partials/dash_header.html' %}   
+            {% include 'partials/dash_sidebar.html' %}   
             {% block dashboard_content %}
             {% endblock %}
             {% include 'partials/dash_footer.html' %}
