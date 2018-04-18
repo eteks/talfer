@@ -1,95 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Dashboard</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- boostrap cdn -->
-  <link rel="stylesheet" href="../static/css/bootstrap.min.css">
 
-<!--   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="../static/css/webfonts/fontawesome-all.css" /> -->
-  <link rel="stylesheet" href="../static/css/style.css">
-  <!-- Scrollbar Custom CSS -->
-  <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
-  <script src="../static/js/jqueryv1.12.0.js"></script>
-  <script src="../static/js/bootstrap.min.js"></script>
-  <script src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script src="../static/js/carouseller.js"></script>
-  
-</head>
-<body>
+
+{% extends 'base.html' %}
+      
+   {% block title %} Dashboard {% endblock %}
+   {% block dashboard_content %}
 <div class="page_bgcolor">
 
 
         <div class="wrapper">
             <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="side_top" id="dismiss">
-                    <p>ACCEDE / REGISTRATE<span class="close_icon"><a href="">X</a></span></p>
-                </div>
-                <div class="logo_dashboard">
-                  <img class="" src ="../static/img/img/logo.png">
-               </div>
-                  
-                  <div class="sidenav">                          
-                          <ul class="nav nav-pills nav-stacked sidenav_first" id="accordion">
-                              <li class="hider active" style="display:none;"><a href="#"><span><</span> Volver</a></li>
-                              <li><a href="#section1">HOME<span>></span></a>
-                                <!-- <ul class="" id="section1">
-                                    <li><a href="">one<span>></span></a></li>
-                                    <li><a href="">two<span>></span></a></li>
-                                  </ul> -->
-                              </li>
-                              <li class="has_drop"><a href="#section2">ACTIVIDAD FISCA<span>></span></a>
-                                  <ul class="" id="section2">
-                                    <li><a href="">MIS ACTIVIDADES</a></li>
-                                    <li><a href="">RANKING</a></li>
-                                    <li class="active"><a href="">RETOS VIGENTES</a></li>
-                                    <li><a href="">LIVE TRACK</a></li>
-
-                                  </ul>
-                              </li>
-
-                              <li class="has_drop"><a href="#section3">EVENTOS<span>></span></a>
-                                <ul id="section3">
-                                    <li><a href="">calendario</a></li>
-                                    <li><a href="">inscripción</a></li>
-                                    <li><a href="">clasificaciones</a></li>
-                                    <li><a href="">galeria imagenes</a></li>
-                                    <li><a href="">valoraciones</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="#section4">ACTIVIDADES<span>></span></a>
-                              <!--   <ul class="" id="section4">
-                                    <li><a href="">one<span>></span></a></li>
-                                    <li><a href="">two<span>></span></a></li>
-                                </ul> -->
-                              </li>
-                              <li><a href="#section5">CUESTIONARIOS<span>></span></a></li>
-                              <li><a href="#section6">SHOP</a></li>
-                              <li><a href="#section7">VITALIS</a></li>
-                              <li><a href="#section7">AYUDA</a></li>
-                              <li><a href="#section9">CONTACTOR</a></li>
-                          </ul><br>
-                          <ul class="nav_bar_right sidenav_second">
-                              <p>IDIOMOS</p>
-                              <div class="clear_both"></div>
-                              <li class="active"><a href="#">ES</a></li>
-                              <li><a href="#">CA</a></li>
-                              <li class="nav_last_list"><a href="#">EN</a></li>
-                          </ul>
-                          <div class="sidenav_bottom">
-                              <img src="../static/img/img/ball_bite.png">
-                          </div>
-                           <footer class="footer_sidebar">
-                                <p> &copy; 2018 Vitalsfera. All rights Reserved</p>
-                                <img src="../static/img/img/footlogo_mob.png">
-                                <div class="clear_both"></div>
-                          </footer>
-                      </div> <!-- sidenav -->
-                
-            </nav>
+            
 
             <!-- Page Content Holder -->
             <div id="content">
@@ -172,143 +92,8 @@
                 </div> <!-- dashboard_content -->
 
             </div><!-- content -->
-             <div class="clear_both"></div>
-              <footer class="footer_dashboard">
-                  <p> &copy; 2018 Vitalsfera. Todos los derechos reservados.</p>
-                  <img src="../static/img/img/footer_logo.png">
-                  <div class="clear_both"></div>
-              </footer>
-        </div> <!-- wrapper -->
+          </div><!-- wrapper -->
+        </div>
+   {% endblock %} 
+             
 
-
-
-
-
-
-        <!-- jQuery CDN -->
-        
-        <!-- jQuery Custom Scroller CDN -->
-        
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-                $('#dismiss, .overlay').on('click', function () {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').fadeOut();
-                });
-              
-                // Get all the links.
-                
-
-                // On clicking of the links do something.
-                
-                if($(window).width() < 768) 
-                {
-                    var link = $("#accordion > li.has_drop > a");
-                    link.on('click', function(e) 
-                    {
-                        e.preventDefault();
-                        var a = $(this).attr("href");  
-                        // var a = .attr("href");       
-                        // $(a).slideDown('fast');
-                           
-                        $("#accordion > li").hide();
-                        $(a).slideToggle('slow');
-                        $(".hider").show();
-                        $(this).parent().show(); 
-                         $(this).hide(); 
-                        $(".hider a").on('click', function(e) 
-                        {
-                          $("#accordion > li").show();
-                          $("#accordion > li > a ").show();
-                          $(".hider").hide();
-                          $("#accordion ul").hide();  
-                        });   
-                    });
-                }
-                else
-                {
-                      var link = $("#accordion a");
-                      link.on('click', function(e) {
-                      e.preventDefault();
-
-                      var a = $(this).attr("href");                    // $(a).slideDown('fast');
-
-                      $(a).slideToggle('slow');
-                      $("#accordion ul").not(a).slideUp('fast')
-                  });
-                }
-
-                    // declare variable
-                    var scrollTop = $(".scrollTop");
-
-                    $(window).scroll(function() {
-                      // declare variable
-                      var topPos = $(this).scrollTop();
-
-                      // if user scrolls down - show scroll to top button
-                      if (topPos > 100) {
-                        $(scrollTop).css("opacity", "1");
-
-                      } else {
-                        $(scrollTop).css("opacity", "0");
-                      }
-
-                    }); // scroll END
-
-                    //Click event to scroll to top
-                    $(scrollTop).click(function() {
-                      $('html, body').animate({
-                        scrollTop: 0
-                      }, 800);
-                      return false;
-
-                    }); // click() scroll top EMD
-
-                    // declare variable
-                    var h1 = $("#h1").position();
-                    var h2 = $("#h2").position();
-                    var h3 = $("#h3").position();
-
-                    $('.link1').click(function() {
-                      $('html, body').animate({
-                        scrollTop: h1.top
-                      }, 500);
-                      return false;
-
-                    }); // left menu link2 click() scroll END
-
-                    $('.link2').click(function() {
-                      $('html, body').animate({
-                        scrollTop: h2.top
-                      }, 500);
-                      return false;
-
-                    }); // left menu link2 click() scroll END
-
-                    $('.link3').click(function() {
-                      $('html, body').animate({
-                        scrollTop: h3.top
-                      }, 500);
-                      return false;
-
-                    }); // left menu link3 click() scroll END
-                $("#accordion").on('click', 'li', function () {
-                $("#accordion li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
-            });
-        </script>
-      </div> <!-- page_bgcolor -->
-    </body>
-</html>

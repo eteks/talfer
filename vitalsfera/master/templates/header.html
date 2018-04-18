@@ -1,0 +1,166 @@
+	{% extends 'base.html' %}
+	{% block home_header %}
+		<div class="top_nav">			
+					<ul class="nav_bar_social_icon">						
+						<li><a class="social_icon" href ="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a class="social_icon" href ="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a class="social_icon" href ="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a class="social_icon" href ="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a class="social_icon" href ="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+						<li><a class="social_icon" href ="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+					</ul>
+					<ul class="nav_bar_right">
+						<li><a href ="#"><span class="glyphicon glyphicon-search"></span></a></li>
+						<li ><a class="nav_border" href="#">BUSCAR</a></li>
+						<li><a class="nav_border" href="{% url 'login' %}">LOGIN</a></li>
+						<li class="active"><a href="#">ES</a></li>
+						<li><a href="#">CA</a></li>
+						<li class="nav_last_list"><a href="#">EN</a></li>
+					</ul>
+					<div class="clear_both"></div>
+		</div>  <!-- top_nav -->
+		<div class="inner_nav">
+			<nav class="navbar navbar-default">
+		        <div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+		        	<a class="navbar-brand" href="{% url 'index' %}"><img src="../static/img/img/logo.png"></a>
+
+		         </div>
+		          <div class="collapse navbar-collapse" id="myNavbar">
+			         <ul class="nav navbar-nav">
+			         	<li><a href="#block_1">QUIENES SOMOS</a></li>
+						<li><a href="#block_2">SOLUCIONES</a></li>
+						<li class="active"><a href="#">OBJETIVOS  </a></li>
+						<li><a href="#block_3">TECNOLOGÍA  </a></li>
+						<li><a href="#block_4">VITALIS </a></li>
+						<li><a href="#block_5">CASOS DE ÉXITO</a></li>
+						<li><a href="#block_6">CONTACTO</a></li>
+
+			         </ul>
+			     </div>
+
+		    </nav>
+	        
+					
+        </div>  <!-- inner_nav -->
+       {% end block %}
+
+       {% block form_header %}
+       <div class="page_bgcolor">
+		    <div class="content">
+		    	<div class="">  
+					<div class="inner_nav login_nav">
+						<nav class="navbar navbar-default">
+				        	<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>                        
+								</button>
+				        		<a class="navbar-brand" href="{% url 'index' %}"><img src="../static/img/img/logo.png"></a>
+				         	</div>
+				          	<div class="collapse navbar-collapse" id="myNavbar">
+					          	<ul class="nav_bar_right">
+									<li><a href="#">ES</a></li>
+									<li><a href="#">CA</a></li>
+									<li class="nav_last_list"><a href="#">EN</a></li>
+								</ul>
+								<div class="clearfix"></div>
+						         <ul class="nav navbar-nav">
+						         	<li><a href="#">QUIENES SOMOS</a></li>
+									<li><a href="#">SOLUCIONES</a></li>
+									<li><a href="#">OBJETIVOS  </a></li>
+									<li><a href="#">TECNOLOGÍA  </a></li>
+									<li><a href="#">VITALIS </a></li>
+									<li><a href="#">CASOS DE ÉXITO</a></li>
+									<li><a href="#">CONTACTO</a></li>
+
+						         </ul>
+					     	</div>
+					     	<div class="clearfix"></div>
+				    	</nav>				
+		        	</div>  <!-- inner_nav -->
+		    	</div> <!-- col-12 ends -->
+		    </div> 
+		</div> <!-- page_bgcolor -->
+		{% end block %}
+
+ {% block dash_header %}
+<div class="page_bgcolor">
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="side_top" id="dismiss">
+                    <p>ACCEDE / REGISTRATE<span class="close_icon"><a href="">X</a></span></p>
+                </div>
+                <div class="logo_dashboard">
+                  <img class="" src ="../static/img/img/logo.png">
+               </div>
+                  
+                  <div class="sidenav">                          
+                          <ul class="nav nav-pills nav-stacked sidenav_first" id="accordion">
+                              <li class="hider a" style="display:none;"><a href="#"><span><</span> Volver</a></li>
+                              <li><a href="#section1">HOME<span>></span></a>
+                                <!-- <ul class="" id="section1">
+                                    <li><a href="">one<span>></span></a></li>
+                                    <li><a href="">two<span>></span></a></li>
+                                  </ul> -->
+                              </li>
+                              <li class="has_drop"><a href="#section2">ACTIVIDAD FISCA<span>></span></a>
+                                  <ul class="" id="section2">
+                                    <li><a href="">MIS ACTIVIDADES</a></li>
+                                    <li><a href="">RANKING</a></li>
+                                    <li class="active"><a href="">RETOS VIGENTES</a></li>
+                                    <li><a href="">LIVE TRACK</a></li>
+
+                                  </ul>
+                              </li>
+
+                              <li class="has_drop"><a href="#section3">EVENTOS<span>></span></a>
+                                <ul id="section3">
+                                    <li><a href="">calendario</a></li>
+                                    <li><a href="">inscripción</a></li>
+                                    <li><a href="">clasificaciones</a></li>
+                                    <li><a href="">galeria imagenes</a></li>
+                                    <li><a href="">valoraciones</a></li>
+                                </ul>
+                              </li>
+                              <li><a href="#section4">ACTIVIDADES<span>></span></a>
+                              <!--   <ul class="" id="section4">
+                                    <li><a href="">one<span>></span></a></li>
+                                    <li><a href="">two<span>></span></a></li>
+                                </ul> -->
+                              </li>
+                              <li><a href="#section5">CUESTIONARIOS<span>></span></a></li>
+                              <li><a href="#section6">SHOP</a></li>
+                              <li><a href="#section7">VITALIS</a></li>
+                              <li><a href="#section7">AYUDA</a></li>
+                              <li><a href="#section9">CONTACTOR</a></li>
+                          </ul><br>
+                          <ul class="nav_bar_right sidenav_second">
+                              <p>IDIOMOS</p>
+                              <div class="clear_both"></div>
+                              <li class="active"><a href="#">ES</a></li>
+                              <li><a href="#">CA</a></li>
+                              <li class="nav_last_list"><a href="#">EN</a></li>
+                          </ul>
+                          <div class="sidenav_bottom">
+                              <img src="../static/img/img/ball_bite.png">
+                          </div>
+                           <footer class="footer_sidebar">
+                                <p> &copy; 2018 Vitalsfera. All rights Reserved</p>
+                                <img src="../static/img/img/footlogo_mob.png">
+                                <div class="clear_both"></div>
+                          </footer>
+                      </div> <!-- sidenav -->
+                
+            </nav>
+        </div>
+    </div>
+  {% end block %}

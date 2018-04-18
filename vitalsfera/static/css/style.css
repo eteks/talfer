@@ -1,4 +1,4 @@
-menu_bar/*FONTS*/
+/*FONTS*/
 @font-face 
 {
     font-family: titilliumweb_regular;
@@ -478,6 +478,15 @@ text-align: justify;
     font-family: titilliumweb_semibold;
     padding:10px;
     margin: 0;
+    border-bottom                                                         
+}
+.side_top span a
+{
+  text-decoration:none;
+}
+.side_top span a:hover
+{
+    color: #fff;
 }
 .side_top .close_icon
 {
@@ -598,7 +607,7 @@ a[aria-expanded="true"]::before
  .sidenav_second
  {
     background-color: #fff;
-    padding-left: 40%;
+    padding-left: 46.5%;
     padding-bottom: 8%;
     padding-right: 8%;
  }
@@ -766,7 +775,7 @@ ol, ul
     float: right;
     position: relative;
 }
-.scrollTop 
+.part_two span 
 {
     color: #fff;
     background-color:#1e9bd7;
@@ -782,7 +791,7 @@ ol, ul
     transform: rotate(90deg);
     cursor: pointer;
 }
-.scrollTop a
+.part_two span a
 {
      color: #fff;
      text-decoration: none;
@@ -857,11 +866,12 @@ ol, ul
 {
     background:#323232;
     padding:10px;
-   
     color: #fff;
     min-height: 46px;
     bottom:0;
     transition: width 0.3s;
+    display: none;
+
 }
 /* ---------------------------------------------------
 Form over slider
@@ -930,10 +940,6 @@ a.login_button:hover
 {
 	text-decoration: none;
 	color: #fff;
-}
-.footer_sidebar 
-{
-    display: none;
 }
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -1261,7 +1267,7 @@ MEDIAQUERIES
         }
     .footer_sidebar p, .footer_dashboard p, footer p
         {
-            font-size: 8px;
+            font-size: 9px;
             float: left;
         }
     .footer_sidebar img, .footer_dashboard img, footer img
