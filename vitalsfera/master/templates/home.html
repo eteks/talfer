@@ -1,5 +1,5 @@
-
 {% extends 'base.html' %}
+{% load static %}
   {% block title %} Home {% endblock %}
     {% load i18n %}
       {% block pagecontent %}
@@ -8,14 +8,14 @@
         <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-                <img src="../static/img/img/slide_one.jpg" alt="Los Angeles" style="width:100%;">
+                <img src="{% static 'img/img/slide_one.jpg' %}" alt="Los Angeles" style="width:100%;">
                 <div class="carousel-caption">
                 <p>{%trans "Genera una atmósfera saludable en la empresa" %}</p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="../static/img/img/sail.jpg" alt="Chicago" style="width:100%;">
+                <img src="{% static 'img/img/sail.jpg' %}" alt="Chicago" style="width:100%;">
                 <div class="carousel-caption">
                 <p>{%trans "Genera una atmósfera saludable en la empresa" %}</p>
                 </div>
@@ -35,7 +35,13 @@
       		</div>
       		<div class="first_layer content_holder">
       			<div class="home_block_one_inner_one">
-      				<img src ="../static/img/img/circle_list.png">
+      				<img src ="{% static 'img/img/circle_list.png' %}">
+              <p class="text_1"><span>{% trans "01." %}</span>{% trans "My account" %}</p>
+              <p class="text_2"><span>{% trans "02." %}</span>{% trans "Courses and activities" %}</p>
+              <p class="text_3"><span>{% trans "03." %}</span>{% trans "Physical activity" %}</p>
+              <p class="text_4"><span>{% trans "04." %}</span>{% trans "Healthy services" %}</p>
+              <p class="text_5"><span>{% trans "05." %}</span>{% trans "Sports events" %}</p>
+              <p class="text_6"><span>{% trans "06." %}</span>{% trans "Store" %}</p>
       			</div>
       			<div class="home_block_one_inner_two">
       				<p><strong>{%trans "VitalSfera" %}</strong>{%trans "es un es un entorno entorno entorno interactivo que permite trabajar diferentes ámbitos de la la salud y el bienestar en un solo sitio y desde cualquier solo sitio y desde cualquier dispositivo." %}</p>
@@ -59,7 +65,7 @@
       			
       			</div>
       			<div class="home_block_three_inner_two">
-                 <img src ="../static/img/img/vitalis.png">
+                 <img src ="{% static 'img/img/vitalis.png' %}">
       			</div>
   			     <div class="clear_both"></div>
            </div> <!-- home_block_three -->

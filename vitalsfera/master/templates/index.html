@@ -1,26 +1,26 @@
 {% extends 'base.html' %}
-      
+   {% load static %}
    {% block title %} Home {% endblock %}
    {% load i18n %}
    {% block pagecontent %}
     <div id="myCarousel" class="carousel slide home_slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="item active">
-				<img src="../static/img/img/slide_one.jpg" alt="Los Angeles" style="width:100%;">
+				<img src="{% static 'img/img/slide_one.jpg'%}" alt="Los Angeles" style="width:100%;">
 					<div class="carousel-caption">
 						<p> {% trans "Genera una atmósfera saludable en la empresa " %}</p>
 					</div>
 				</div>
 
 				<div class="item">
-				<img src="../static/img/img/sail.jpg" alt="Chicago" style="width:100%;">
+				<img src="{% static 'img/img/sail.jpg'%}" alt="Chicago" style="width:100%;">
 				<div class="carousel-caption">
 						<p>{% trans "Genera una atmósfera saludable en la empresa" %}</p>
 				</div>
 				</div>
 
 				<div class="item">
-				<img src="../static/img/img/slide_one.jpg" alt="New york" style="width:100%;">
+				<img src="{% static 'img/img/slide_one.jpg'%}" alt="New york" style="width:100%;">
 				<div class="carousel-caption">
 						<p>{% trans "Genera una atmósfera saludable en la empresa" %}</p>
 				</div>
@@ -38,7 +38,7 @@
   		<hr> 
   		<div class="home_block_one content_holder" id="block_1">
   			<div class="home_block_one_inner_one">
-  				<img src ="../static/img/img/circle_list.png">
+  				<img src ="{% static 'img/img/circle_list.png' %}">
   				<p class="text_1"><span>{% trans "01." %}</span>{% trans "My account" %}</p>
   				<p class="text_2"><span>{% trans "02." %}</span>{% trans "Courses and activities" %}</p>
   				<p class="text_3"><span>{% trans "03." %}</span>{% trans "Physical activity" %}</p>
@@ -53,7 +53,7 @@
   				<p>Disponible para todos los smartphones, tablets y ordenadores.</p>
   				<p>Integración en el la web o <strong>entorno digital corporativo exclusivo</strong> mediante subdominio  o URL propia.</p>
   				<p class="last_child">También ofrecemos integración de nuestra <strong>App de VitalSfera</strong> como canal de salud corporativo para empresas.</p> -->
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</div>
+  				<div class="mas_info"><span><img src="{% static 'img/img/plus.png' %}"></span>{% trans "More information" %}</div>
   			</div>
   			<div class="clear_both"></div>
 
@@ -62,83 +62,7 @@
   		<div class="home_block_two" id="block_2">
   			<div class="content_holder table-responsive">
   				<h2>{% trans "Solutions" %}</h2>
-	  			<!-- <div class="module_one">
-	  				<div class="module_inner">
-	  					<h4>{% trans "Módulo 1" %}</h4>
-	  					<hr>
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
-	  				</div>
-	  			</div>
-	  			<div class="module_two">
-	  				<div class="module_inner">
-	  					<h4>{% trans "Módulo 2" %}</h4>
-	  					<hr>
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
-	  				</div>
-
-	  			</div>
-	  			<div class="module_three">
-	  				<div class="module_inner">
-	  					<h4>{% trans "Módulo 3" %}</h4>
-	  					<hr>
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Dietética y" %}<br>{% trans "Nutrición" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "eFacturas y control" %}<br>{% trans "situación" %}<span><img src="../static/img/img/cross.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Ofertas Productos" %}<br>{% trans "y Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</p>
-	  				</div>
-	  			</div>
-	  			<div class="module_four">
-	  				<div class="module_inner">
-	  					<h4>{% trans "Módulo 4" %}</h4>
-	  					<hr>
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Entrenamientos" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Gestión de" %}<br>{% trans "Servicios" %}<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>{% trans "Fisioterapia y" %}<br>{% trans "Tratamientos<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>Dietética y<br>Nutrición<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>eFacturas y control<br>situación<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p>Ofertas Productos<br>y Servicios<span><img src="../static/img/img/tick.png"></span></p>
-	  					<hr class="inner_hr">
-	  					<p class="module_mas_info"><span><img src="../static/img/img/plus.png"></span>More information</p>
-	  				</div>
-	  			</div> -->
+	  			
 				  <table class="table">
 				    <thead>
 				      <tr>
@@ -151,57 +75,57 @@
 				    <tbody>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Sistema de inscripciones a actividades y cursos" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Gestor de contenidos (noticias, videos, fotos…)" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "App VitalSfera medición Actividad Física" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				      	<td class="table_con col_one">{% trans "Sistema Connect a Wearables y Apps medición actividad física" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Sistema de encuestas" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Sistema y catálogo de puntos incentivos" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Creación y gestión de retos virtuales" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Sistema de mensajería y seguimiento para profesionales de la salud de la empresa" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/cross.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/cross.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one">{% trans "Dashboard analítico y reporting" %}</td>
-				        <td class="table_con col_two"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_three"><img src="../static/img/img/tick.png"></td>
-				        <td class="table_con col_four"><img src="../static/img/img/tick.png"></td>
+				        <td class="table_con col_two"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_three"><img src="{% static 'img/img/tick.png' %}"></td>
+				        <td class="table_con col_four"><img src="{% static 'img/img/tick.png' %}"></td>
 				      </tr>
 				      <tr>
 				        <td class="table_con col_one"></td>
@@ -227,11 +151,11 @@
   				<p>{%trans "The VitalSfera platform acts as a corporate hub for the promotion of healthy habits." %}</p>
   				<p>{%trans "It allows grouping, managing, measuring and communicating in an easy way all the contents and activities related to the promotion of healthy habits and the prevention of occupational risks in the company." %}</p>
   				<p class="last_child">{% trans "It is an essential tool and a great help for certification as a Healthy Company" %}</p>
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{%trans "More information" %}</div>
+  				<div class="mas_info"><span><img src="{% static 'img/img/plus.png' %}"></span>{%trans "More information" %}</div>
   			
   			</div>
   			<div class="home_block_three_inner_two">
-  				<img src ="../static/img/img/ventajas.png">
+  				<img src ="{% static 'img/img/ventajas.png' %}">
   				<p class="text_1">{% trans "Fast & Easy" %}</br>{% trans "implementation" %}</p>
   				<p class="text_2">{% trans "Costless" %}</p>
   				<p class="text_3">{% trans "High user" %}</br>{% trans "engagement" %}</p>
@@ -245,7 +169,7 @@
   		<div class="home_block_four " id="block_4">
   			<div class="content_holder">
 	  			<div class="home_block_four_inner_one">
-	  				<img src ="../static/img/img/tabmob.png">
+	  				<img src ="{% static 'img/img/tabmob.png' %}">
 	  			</div>
 	  			<div class="home_block_four_inner_two">
 	  				<h2>{%trans "Responsive web technology and App for iOS / Android" %}</h2>
@@ -254,7 +178,7 @@
 	  				<p>{%trans "It is available for all smartphones, tablets and computers." %}</p>
 	  				<p>{%trans "Includes a customized integration to the web or corporate digital environment through subdomain or own URL.We also offer full corporate customization of our VitalSfera Physical Activity Measurement App." %}</p>
 	  				<p class="last_child"> </p>
-	  				<div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>{%trans "More information" %}</div>
+	  				<div class="mas_info"><span><img src="{% static 'img/img/plus_white.png' %}"></span>{%trans "More information" %}</div>
 	  			</div>
   			</div>
   			<div class="clear_both"></div>
@@ -267,23 +191,23 @@
   				<!-- <p>Disponible para todos los smartphones, tablets y ordenadores.</p>
   				<p>Integración en el la web o entorno digital corporativo mediante subdominio  o URL propia.</p>
   				<p class="last_child">También ofrecemos integración de nuestra App de VitalSfera como canal de salud corporativo para empresas, sistema Connect Plataforma conectada a los wearables y dispositivos más usuales del mercado mercado .</p> -->
-  				<div class="mas_info"><span><img src="../static/img/img/plus.png"></span>{% trans "More information" %}</div>
+  				<div class="mas_info"><span><img src="{% static 'img/img/plus.png' %}"></span>{% trans "More information" %}</div>
   			
   			</div>
   			<div class="home_block_five_inner_two text-center">
-  				<img src ="../static/img/img/set1_01.png">
-  				<img src ="../static/img/img/set1_02.png">
-  				<img src ="../static/img/img/set1_03.png">
-  				<img src ="../static/img/img/set2_01.png">
-  				<img src ="../static/img/img/set2_02.png">
-  				<img src ="../static/img/img/set2_03.png">
-  				<img src ="../static/img/img/set3_01.png">
-  				<img src ="../static/img/img/set3_02.png">
-  				<img src ="../static/img/img/set3_03.png">
-  				<img src ="../static/img/img/set3_04.png">
-  				<img src ="../static/img/img/set4_02.png">
-  				<img src ="../static/img/img/set4_03.png">
-  				<img src ="../static/img/img/set4_04.png">
+  				<img src ="{% static 'img/img/set1_01.png' %}">
+  				<img src ="{% static 'img/img/set1_02.png' %}">
+  				<img src ="{% static 'img/img/set1_03.png' %}">
+  				<img src ="{% static 'img/img/set2_01.png' %}">
+  				<img src ="{% static 'img/img/set2_02.png' %}">
+  				<img src ="{% static 'img/img/set2_03.png' %}">
+  				<img src ="{% static 'img/img/set3_01.png' %}">
+  				<img src ="{% static 'img/img/set3_02.png' %}">
+  				<img src ="{% static 'img/img/set3_03.png' %}">
+  				<img src ="{% static 'img/img/set3_04.png' %}">
+  				<img src ="{% static 'img/img/set4_02.png' %}">
+  				<img src ="{% static 'img/img/set4_03.png' %}">
+  				<img src ="{% static 'img/img/set4_04.png' %}">
   			</div>
   			<div class="clear_both"></div>
 
@@ -291,7 +215,7 @@
   		<div class="home_block_six " id="block_6">
   			<div class="content_holder">
 	  			<div class="home_block_six_inner_one">
-	               <img src ="../static/img/img/vitalis.png">
+	               <img src ="{% static 'img/img/vitalis.png' %}">
 	               
 	  			</div>
 	  			<div class="home_block_six_inner_two">
@@ -299,7 +223,7 @@
 	  				<p>{%trans "VitalSfera has a rewaring program to engage employees to the VitalSfera healthy habits platform." %}</p>
 	  				<p class="last_child">{%trans "Employees participation in health promotion activities and physical activity help users get" %} {%trans "Vitalis" %}{% trans "points redeemable in the catalog or benefit system company has." %}</p>
 	  				<!-- <p class="last_child">Puesta en marcha de un Programa de Puntos, llamados Vitalis, en el que los miembros registrados en el portal de salud VitalSfera podrán ir monitorizando su actividad física diaria y acumular<strong>Vitalis canjeables por productos y servicios saludables.</strong> </p> -->
-	  			    <div class="mas_info"><span><img src="../static/img/img/plus_white.png"></span>{% trans "More information" %}</div>
+	  			    <div class="mas_info"><span><img src="{% static 'img/img/plus_white.png' %}"></span>{% trans "More information" %}</div>
 	  			</div>
 	  		</div>	
   			<div class="clear_both"></div>

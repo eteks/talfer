@@ -250,7 +250,9 @@ table
  {
     right: 20%;
     left: 20%;
-    padding-bottom: 280px;
+    padding-bottom: 0;
+    top: 70%;
+    bottom: unset;
 }
 .home_slide .carousel-caption p
 {
@@ -1241,6 +1243,19 @@ MEDIAQUERIES
     top: 71%;
     right: 20%;
 }
+.home_slide .carousel-caption 
+{
+   
+    top: unset;
+    bottom: 0;
+}
+.home_slide .carousel-caption p 
+{
+    font-size: 10px !important;
+    font-family: titilliumweb_bold;
+    margin: 0;
+}
+
 	/*Form*/
 	.form_slider 
 	{
